@@ -1,0 +1,21 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "prepare": "patch-package"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.19.2",
+    "patch-package": "^8.0.0"
+  },
+  "dependencies": {
+    "is-porn": "^0.9.0"
+  }
+}

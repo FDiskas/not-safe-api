@@ -1,0 +1,12 @@
+
+### Unsafe
+GET http://localhost:3000/?site=https://redtube.com
+
+### Safe
+GET http://localhost:3000/?site=https://delfi.com
+  
+### Invalid
+GET http://localhost:3000/?site=delfi.com
+
+### Invalid
+GET http://localhost:3000/?site=delficom
