@@ -1,7 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import isPorn from 'is-porn';
+
 const app = express();
 const port = process.env.PORT ?? 3001;
+
+app.use(cors());
 
 const isPornPromise = (url) => new Promise((resolve, reject) => {
     isPorn(url, (error, status) => {
