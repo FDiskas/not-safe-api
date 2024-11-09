@@ -6,7 +6,9 @@ It checks if it is an adult site or not.
 ```
 GET ?site=https://google.com
 ```
+
 Returns a status `TRUE` if unsafe and `FALSE` if it is safe for browsing.
+
 ```json
 {
   "url": "google.com",
@@ -15,4 +17,5 @@ Returns a status `TRUE` if unsafe and `FALSE` if it is safe for browsing.
 ```
 
 ### Dependencies
-- the main package is `is-porn` 
+
+- the main package is `is-porn`

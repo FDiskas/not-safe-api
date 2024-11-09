@@ -1,26 +1,26 @@
 {
-  "name": "express",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node --watch index.js",
-    "prepare": "patch-package"
-  },
+  "name": "not-safe-api",
+  "module": "index.ts",
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "bun index.ts --watch",
+    "build": "bun build ./index.ts --outdir ./ --target node"
+  },
   "devDependencies": {
-    "@types/bun": "^1.1.0",
-    "express": "^4.19.2",
-    "patch-package": "^8.0.0"
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "express": "^4.21.1",
     "is-porn": "^0.9.0"
-  },
-  "engines": {
-    "node": ">=20.0.0"
   }
 }
