@@ -7,6 +7,7 @@ const port = process.env.PORT ?? 3001;
 
 app.use(cors());
 
+/* test preview */
 const isPornPromise = (url) => new Promise((resolve, reject) => {
     isPorn(url, (error, status) => {
         if (error) reject(error);
@@ -21,7 +22,7 @@ app.get('/', async (req, res, next) => {
     try {
         url = new URL(site).hostname;
     } catch (error) {
-        return res.status(400).json({ error: 'Invalid url' });
+        return res.status(400).json({ error: 'Invalid url: example.com?url=https://delfi.lt' });
     }
 
     try {
