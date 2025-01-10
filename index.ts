@@ -22,7 +22,7 @@ app.get('/', async (req, res, next) => {
     try {
         url = new URL(site).hostname;
     } catch (error) {
-        return res.status(400).json({ error: 'Invalid url: example.com?url=https://delfi.lt' });
+        return res.status(400).json({ error: 'Invalid url: example.com?site=https://delfi.lt' });
     }
 
     try {
