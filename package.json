@@ -6,10 +6,12 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node index.js",
+    "start": "bun index.ts",
     "dev": "bun index.ts --watch",
-    "build": "bun build ./index.ts --outdir ./ --target node",
     "prepare": "patch-package"
+  },
+  "engines": {
+    "bun": "1.3.14"
   },
   "devDependencies": {
     "@types/bun": "latest",
